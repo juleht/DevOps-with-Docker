@@ -39,6 +39,39 @@ Docker commands:
 docker run -it ubuntu
 apt-get update && apt-get -y install curl
 sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
-test input using: helsinki.fi
+input: helsinki.fi
+```
+
+#### Exercise 1.5: Sizes of images
+
+Docker commands:
+
+```
+docker pull devopsdockeruh/simple-web-service:ubuntu
+docker pull devopsdockeruh/simple-web-service:alpine
+docker image ls -a
+docker run -it -d --name alpinekontti devopsdockeruh/simple-web-service:alpine
+docker exec alpinekontti tail -f ./text.log
+```
+
+#### Exercise 1.6: Hello Docker Hub
+
+Docker commands:
+
+```
+docker run -it devopsdockeruh/pull_exercise
+input: basics
+```
+
+#### Exercise 1.7: Image for script
+
+Dockerfile
+
+Docker commands:
+
+```
+docker build . -t curler
+docker run -it curler
+input: helsinki.fi
 ```
 
