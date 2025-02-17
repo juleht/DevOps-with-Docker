@@ -93,4 +93,42 @@ docker run -p 127.0.0.1:8080:8080 spring-project
 
 ```
 
-#### 
+#### Mandatory Exercise 1.12: Hello, frontend!
+
+For this exercise you have to clone courses example project [material-applications](https:>
+
+[Dockerfile](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_12/Dockerfile)
+ 
+```
+docker build -t example-frontend .
+docker run -p 127.0.0.1:5000:5000 example-frontend
+
+```
+
+#### Mandatory Exercise 1.13: Hello, backend!
+
+For this exercise you have to clone courses example project [material-applications](https:>
+
+[Dockerfile](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_13/Dockerfile)
+
+```
+docker build -t example-backend .
+docker run -p 127.0.0.1:8000:8000 example-backend
+
+```
+
+#### Mandatory Exercise 1.14: Environment
+
+[Dockerfile for frontend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_12/Dockerfile)
+
+[Dockerfile for backend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_13/Dockerfile)
+
+```
+docker build -t example-backend .
+docker run -p 127.0.0.1:8000:8000 example-backend
+docker build -t example-frontend .
+docker run -p 127.0.0.1:5000:5000 example-frontend
+
+```
+
+
