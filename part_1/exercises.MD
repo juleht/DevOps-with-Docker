@@ -86,7 +86,7 @@ docker run -p 127.0.0.1:8080:8080 web-server
 
 For this exercise you have to clone courses example project [material-applications](https://github.com/docker-hy/material-applications/tree/main)
 
-[Dockerfile]
+[Dockerfile](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_11/Dockerfile)
 
 ```
 docker run -p 127.0.0.1:8080:8080 spring-project
