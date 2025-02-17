@@ -69,3 +69,27 @@ input: helsinki.fi
 docker build . -t web-server
 docker run -it web-server
 ```
+
+#### Exercise 1.9: Volumes
+
+```
+docker run -it -v "$(pwd)/text.log:/usr/src/app/text.log" --name tehtava9 devopsdockeruh/simple-web-service
+```
+
+#### Exercise 1.10: Ports open
+
+```
+docker run -p 127.0.0.1:8080:8080 web-server
+```
+
+#### Exercise 1.11: Spring
+
+For this exercise you have to clone courses example project [material-applications](https://github.com/docker-hy/material-applications/tree/main)
+
+[Dockerfile]
+
+```
+docker run -p 127.0.0.1:8080:8080 spring-project
+
+```
+
