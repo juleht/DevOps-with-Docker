@@ -75,3 +75,9 @@ docker run -it curler
 input: helsinki.fi
 ```
 
+#### Exercise 1.8: Two line Dockerfile
+
+```
+docker build . -t web-server
+docker run -it web-server
+```
