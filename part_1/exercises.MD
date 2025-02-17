@@ -65,7 +65,7 @@ input: basics
 
 #### Exercise 1.7: Image for script
 
-Dockerfile
+[https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_7/Dockerfile](Dockerfile)
 
 Docker commands:
 
