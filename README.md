@@ -1,2 +1,2 @@
 # DevOps-with-Docker
-University of Helsinki course assignments https://devopswithdocker.com/ assignments
+University of Helsinki course [DevOps with Docker](https://devopswithdocker.com/) excercises
