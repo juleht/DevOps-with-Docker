@@ -90,7 +90,6 @@ For this exercise you have to clone courses example project [material-applicatio
 
 ```
 docker run -p 127.0.0.1:8080:8080 spring-project
-
 ```
 
 #### Mandatory Exercise 1.12: Hello, frontend!
@@ -102,7 +101,6 @@ For this exercise you have to clone courses example project [material-applicatio
 ```
 docker build -t example-frontend .
 docker run -p 127.0.0.1:5000:5000 example-frontend
-
 ```
 
 #### Mandatory Exercise 1.13: Hello, backend!
@@ -114,7 +112,6 @@ For this exercise you have to clone courses example project [material-applicatio
 ```
 docker build -t example-backend .
 docker run -p 127.0.0.1:8000:8000 example-backend
-
 ```
 
 #### Mandatory Exercise 1.14: Environment
@@ -128,7 +125,14 @@ docker build -t example-backend .
 docker run -p 127.0.0.1:8000:8000 example-backend
 docker build -t example-frontend .
 docker run -p 127.0.0.1:5000:5000 example-frontend
-
 ```
+
+#### Exercise 1.16: Cloud deployment
+
+[Dockerfile]
+
+This exercise i deployd the coursepage from here [Docker repo](https://hub.docker.com/r/devopsdockeruh/coursepage) to [render.com](https://render.com/).
+
+Deployment to be successful i only had to pinpoint my github repo and the Dockerfile used.
 
 
