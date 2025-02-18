@@ -40,3 +40,10 @@ For this exercise you need to clone course example project [material-application
 docker compose up --scale compute 3
 ```
 
+#### Exercise 2.6
+
+For this exercise you need to clone course example project [material-applications](https://github.com/docker-hy/material-applications/tree/main).
+
+```
+docker compose up
+```
