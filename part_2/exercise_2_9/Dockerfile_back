@@ -1,0 +1,31 @@
+#################################
+# this is dockerfie for backend #
+#################################
+
+## load go 1.16
+FROM golang:1.16
+
+## expose port
+EXPOSE 8080
+
+
+## working directory
+WORKDIR /usr/src/app
+
+## copy files
+COPY material-applications/example-backend .
+
+## environmental variable
+ENV PATH="$PATH:/usr/local/go/bin"
+
+## env variable for 1.14
+ENV REQUEST_ORIGIN=http://127.0.0.1:5000
+
+## build project
+RUN go build
+
+## run tests
+RUN go test ./...
+
+## run project
+CMD ["./server"]
