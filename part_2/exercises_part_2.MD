@@ -34,7 +34,7 @@ docker compose up
 
 #### Exercise 2.5
 
-For this exercise you need to clone course example project [material-applications](https:/>
+For this exercise you need to clone course example project [material-applications](https://github.com/docker-hy/material-applications/tree/main).
 
 ```
 docker compose up --scale compute 3
@@ -50,15 +50,14 @@ docker compose up
 
 #### Exercise 2.7
 
-For this exercise you need to clone course example project [material-applications](https:/>
-
+For this exercise you need to clone course example project [material-applications](https://github.com/docker-hy/material-applications/tree/main).
 ```
 docker compose up
 ```
 
 #### Exercise 2.8
 
-For this exercise you need to clone course example project [material-applications](https:/>
+For this exercise you need to clone course example project [material-applications](https://github.com/docker-hy/material-applications/tree/main).
 
 ```
 docker compose up
@@ -66,7 +65,7 @@ docker compose up
 
 #### Exercise 2.9
 
-For this exercise you need to clone course example project [material-applications](https:/>
+For this exercise you need to clone course example project [material-applications](https://github.com/docker-hy/material-applications/tree/main).
 
 ```
 docker compose up
