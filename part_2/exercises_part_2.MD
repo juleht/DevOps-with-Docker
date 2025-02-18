@@ -56,3 +56,11 @@ For this exercise you need to clone course example project [material-application
 docker compose up
 ```
 
+#### Exercise 2.8
+
+For this exercise you need to clone course example project [material-applications](https:/>
+
+```
+docker compose up
+```
+
