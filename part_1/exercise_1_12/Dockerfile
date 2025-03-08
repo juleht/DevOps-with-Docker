@@ -1,13 +1,5 @@
-####################################
-# this is Docker file for frontend #
-####################################
-
-## install node
-FROM node:16
-
-# expose port
-EXPOSE 5000
-
+## load node.js earlier version for this project 
+FROM ubuntu:22.04
 
 ## working directory
 WORKDIR /usr/src/app
@@ -15,18 +7,22 @@ WORKDIR /usr/src/app
 ## copy project to working directory
 COPY material-applications/example-frontend .
 
+## expose port 
+EXPOSE 5000
 
-## check install
+## install curl and node.js
+RUN apt-get update
+RUN apt-get -y install curl
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash
+RUN apt install -y nodejs
 RUN npm install
+## check install
 RUN node -v && npm -v
-
-## add environmental variable 1.14 exercise
-ENV REACT_APP_BACKEND_URL=http://127.0.0.1:8080
 
 ## build project
 RUN npm run build
 
-
 RUN npm install -g serve
-#CMD serve -s -l 5000 build
-CMD ["sh", "-c", "serve -s -l 5000 build"]
+
+CMD serve -s -l 5000 build
+

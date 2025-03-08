@@ -73,12 +73,14 @@ docker run -it web-server
 #### Exercise 1.9: Volumes
 
 ```
+touch text.log
 docker run -it -v "$(pwd)/text.log:/usr/src/app/text.log" --name tehtava9 devopsdockeruh/simple-web-service
 ```
 
 #### Exercise 1.10: Ports open
 
 ```
+docker build . -t web-server
 docker run -p 127.0.0.1:8080:8080 web-server
 ```
 
@@ -89,6 +91,7 @@ For this exercise you have to clone courses example project [material-applicatio
 [Dockerfile](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_11/Dockerfile)
 
 ```
+docker build . -t spring-project
 docker run -p 127.0.0.1:8080:8080 spring-project
 ```
 
@@ -100,7 +103,7 @@ For this exercise you have to clone courses example project [material-applicatio
  
 ```
 docker build -t example-frontend .
-docker run -p 127.0.0.1:5000:5000 example-frontend
+docker run -p 5000:5000 example-frontend
 ```
 
 #### Mandatory Exercise 1.13: Hello, backend!
