@@ -109,12 +109,12 @@ docker run -p 5000:5000 example-frontend
 #### Mandatory Exercise 1.13: Hello, backend!
 
 For this exercise you have to clone courses example project [material-applications](https:>
-
+Download go version from here [go](https://go.dev/doc/install)
 [Dockerfile](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_13/Dockerfile)
 
 ```
 docker build -t example-backend .
-docker run -p 127.0.0.1:8000:8000 example-backend
+docker run -p 8080:8080 example-backend
 ```
 
 #### Mandatory Exercise 1.14: Environment
@@ -125,9 +125,9 @@ docker run -p 127.0.0.1:8000:8000 example-backend
 
 ```
 docker build -t example-backend .
-docker run -p 127.0.0.1:8000:8000 example-backend
+docker run -p 8000:8000 example-backend
 docker build -t example-frontend .
-docker run -p 127.0.0.1:5000:5000 example-frontend
+docker run -p 5000:5000 example-frontend
 ```
 
 #### Exercise 1.16: Cloud deployment
