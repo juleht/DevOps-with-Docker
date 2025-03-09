@@ -124,10 +124,10 @@ docker run -p 8080:8080 example-backend
 [Dockerfile for backend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_13/Dockerfile)
 
 ```
-docker build -t example-backend .
-docker run -p 8000:8000 example-backend
-docker build -t example-frontend .
-docker run -p 5000:5000 example-frontend
+docker build -f Dockerfile-frontend -t example-frontend .
+docker run -p 5000:5000 example-frontend:latest 
+docker build -f Dockerfile-backend -t example-backend .
+docker run -p 8080:8080 example-backend:latest
 ```
 
 #### Exercise 1.16: Cloud deployment

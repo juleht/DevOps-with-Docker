@@ -1,0 +1,28 @@
+###################################
+# this is Dockerfile for frontend #
+###################################
+ 
+## install node
+FROM node:16
+ 
+#expose port
+EXPOSE 5000
+
+## add environmental variable 1.14 exercise
+ENV REACT_APP_BACKEND_URL=http://localhost:8080
+
+## working directory
+WORKDIR /usr/src/app
+ 
+## copy project to working directory
+COPY material-applications/example-frontend .
+ 
+## check install
+RUN npm install
+
+## build project
+RUN npm run build
+ 
+RUN npm install -g serve
+
+CMD ["sh", "-c", "serve -s -l 5000 build"]
