@@ -119,9 +119,9 @@ docker run -p 8080:8080 example-backend
 
 #### Mandatory Exercise 1.14: Environment
 
-[Dockerfile for frontend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_12/Dockerfile)
+[Dockerfile for frontend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_14/Dockerfile-frontend)
 
-[Dockerfile for backend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_13/Dockerfile)
+[Dockerfile for backend](https://github.com/juleht/DevOps-with-Docker/blob/main/part_1/exercise_1_14/Dockerfile-backend)
 
 ```
 docker build -f Dockerfile-frontend -t example-frontend .
