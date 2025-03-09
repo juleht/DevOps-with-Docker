@@ -4,7 +4,7 @@ services:
     ports:
       - 5000:5000
     environment:
-      - REACT_APP_BACKEND_URL=http://127.0.0.1:8080
+      - REACT_APP_BACKEND_URL=http://localhost:8080
     build:
       context: .
       dockerfile: Dockerfile_front
@@ -16,7 +16,7 @@ services:
       -  8080:8080
     environment:
       - PATH="$PATH:/usr/local/go/bin"
-      - REQUEST_ORIGIN=http://127.0.0.1:5000
+      - REQUEST_ORIGIN=http://localhost:5000
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
     build:
