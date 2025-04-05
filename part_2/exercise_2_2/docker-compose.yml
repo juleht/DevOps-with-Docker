@@ -2,9 +2,9 @@ services:
   simple-web-service:
     image: devopsdockeruh/simple-web-service
     ports:
-      - 127.0.0.1:8080:8080
+      - 8080:8080
     build: .
-    volumes: 
-      - /home/jussi/mooc/devops/EXERCISE_2_1/logs/text.log:/usr/src/app/text.log
+    volumes:
+      - ./text.log:/usr/src/app/text.log
     container_name: web-service-testi-webpage
-    command: server -p 127.0.0.1:8080:8080
+    command: server -p 8080:8080

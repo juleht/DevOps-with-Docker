@@ -5,5 +5,5 @@ services:
     image: devopsdockeruh/simple-web-service
     build: .
     volumes: 
-      - /home/jussi/mooc/devops/EXERCISE_2_1/logs/text.log:/usr/src/app/text.log
+      - ./text.log:/usr/src/app/text.log
     container_name: web-service-testi

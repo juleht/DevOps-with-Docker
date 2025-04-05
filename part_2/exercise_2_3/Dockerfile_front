@@ -23,7 +23,7 @@ RUN npm install
 RUN node -v && npm -v
 
 ## add environmental variable 1.14 exercise
-ENV REACT_APP_BACKEND_URL=http://127.0.0.1:8080
+ENV REACT_APP_BACKEND_URL=http://localhost:8080
 
 ## build project
 RUN npm run build

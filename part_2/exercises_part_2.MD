@@ -37,7 +37,7 @@ docker compose up
 For this exercise you need to clone course example project [material-applications](https://github.com/docker-hy/material-applications/tree/main).
 
 ```
-docker compose up --scale compute 3
+docker compose up --scale compute=3
 ```
 
 #### Exercise 2.6
