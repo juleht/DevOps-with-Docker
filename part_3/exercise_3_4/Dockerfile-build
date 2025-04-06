@@ -1,0 +1,24 @@
+# Dockerfile-build
+
+# Use a base image that includes Docker
+FROM docker:latest
+
+# Install required packages
+RUN apk add --no-cache \
+    bash \
+    git \
+    pass \
+    gnupg \
+    && rm -rf /var/cache/apk/*
+
+# Create and set the working directory
+WORKDIR /usr/src/app
+
+# Copy the build script to the container
+COPY build.sh .
+
+# Make the script executable
+RUN chmod +x build.sh
+
+# Define the entrypoint to run the script
+ENTRYPOINT ["./build.sh"]
