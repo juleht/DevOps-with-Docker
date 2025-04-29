@@ -1,0 +1,26 @@
+#################################
+# this is Dockerfile for backend #
+#################################
+ 
+## load go 1.16
+FROM golang:1.16-alpine
+ 
+## expose port
+EXPOSE 8080
+ 
+## working directory
+WORKDIR /usr/src/app
+ 
+## copy files
+COPY material-applications/example-backend .
+ 
+## environmental variables 
+ENV PATH="$PATH:/usr/local/go/bin"
+ 
+## env variable for 1.14
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+RUN apk add gcc musl-dev && go build && go test ./...
+ 
+## run project
+CMD ["./server"]

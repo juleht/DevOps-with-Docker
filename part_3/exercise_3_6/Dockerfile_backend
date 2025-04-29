@@ -1,0 +1,36 @@
+#################################
+# this is dockerfie for backend #
+#################################
+
+## load node.js earlier version for this project 
+FROM ubuntu:22.04
+
+## working directory
+WORKDIR /usr/src/app
+
+## expose port 8080
+EXPOSE 8080
+
+## copy project to working directory
+COPY material-applications/example-backend .
+
+## add go tar
+COPY go1.16.linux-amd64.tar.gz /usr/src/
+
+
+ENV PATH="$PATH:/usr/local/go/bin"
+
+## install go and set environmental variable
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y ca-certificates && \
+    apt-get install gcc -y && \
+    update-ca-certificates && \
+    apt-get purge -y && \
+    rm -rf /var/lib/apt/list && \
+    rm -rf /usr/local/go && tar -C /usr/local -xzf /usr/src/go1.16.linux-amd64.tar.gz && \
+    go build && \
+    go test ./...
+
+## run project
+CMD ["./server"]
+
