@@ -44,4 +44,4 @@ docker build -f Dockerfile -t example-backend .
 #### Exercise 3.11
 
 
-![kubernetes]().
+![kubernetes](https://github.com/juleht/DevOps-with-Docker/blob/main/part_3/exercise_3_11/kubernets.png).
